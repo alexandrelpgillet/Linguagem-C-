@@ -1,2 +1,2 @@
 # Problemas-Beecrowd-Iniciante-Linguagem-C
- Problemas de categoria básica envolvendo linguagem C++.
+ Problemas de categoria básica (BEECROWD) envolvendo linguagem C++.
