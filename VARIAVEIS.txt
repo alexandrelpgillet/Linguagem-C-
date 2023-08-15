@@ -1,0 +1,6 @@
+int--> inteiros
+float-->números com até 5 casas decimais após a vírgula 
+double--> números com mais de 5 casas decimais apósa a vírgula 
+string--> conjunto de caracteres  
+char--> único caracter (UTF-8, ASCII) 
+booleah--> verdadeiro ou falso
