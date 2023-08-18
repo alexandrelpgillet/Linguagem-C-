@@ -1,187 +1,138 @@
-#include <iostream >
-using namespace std; 
+#include <iostream>
+#include <math.h>
+using namespace std;
+
 
 int main(){
-     
-     double A , B , C;
 
-     cin>>A>>B>>C;
-     
-     
-        
-        if(A>B and A>C){
-           
-           if(A>=B+C){
-            cout<<"Não forma triangulo"<<endl;
-        
-           }else{
-            if(A*A == B*B + C*C){
-                cout<<"Triangulo retangulo"<<endl;
+double A, B , C , maior1 , maior2 ;
+cin>>A >>B>>C;
 
-            }
+maior1=(A+B+abs(A-B))/2;
+maior2=(maior1 + C + abs(maior1-C))/2;
 
-            if(A*A > B*B + C*C){
-                 cout<<"Triangulo obtusangulo"<<endl;
-                
-            }
-                    
-            if(A*A <B*B + C*C){
-                cout<<"Triangulo acutangulo"<<endl;
-                    
-            }
-
-                    
-            }
-                
-
+if(maior2==A){
+    if(maior2>=B+C){
+        cout<<"NAO FORMA TRIANGULO"<<endl;
+    }else{
+        if(maior2*maior2 == B*B + C*C){
+         cout<<"TRIANGULO RETANGULO"<<endl;
         }
-
-        
-        if (B>A and B>C){
-                
-            if (B>=C+A){
-            cout<<"Não forma triangulo"<<endl;
+        if(maior2*maior2 >B*B + C*C){
+          cout<<"TRIANGULO OBTUSANGULO"<<endl;  
+        }
+        if(maior2*maior2< B*B + C*C){
+          cout<<"TRIANGULO ACUTANGULO"<<endl;
+        }
+        if(maior2 == B and maior2 == C){
             
+           cout<<"TRIANGULO EQUILATERO"<<endl;
+        }else{
+            if(maior2 ==B){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
+            }
+
+            if(maior2 ==C){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
+
             }else{
-                
-                if(B*B==A*A+C*C){
-                    cout<<"Triangulo retangulo"<<endl;
-                }
+            if(B==C){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
+            }
+            }
+        }
+              
 
-                if(B*B>A*A+C*C){
-                    cout<<"Triangulo obtusangulo"<<endl;
-                }
+    }
 
-                if (B*B<A*A+C*C){
-                    cout<<"Triangulo acutangulo"<<endl;
-                }
 
-                
-               
 
+}else{
+
+if(maior2==B){
+    if(maior2>=A+C){
+        cout<<"NAO FORMA TRIANGULO"<<endl;
+    }else{
+        if(maior2*maior2 == A*A + C*C){
+         cout<<"TRIANGULO RETANGULO"<<endl;
+        }
+        if(maior2*maior2 >A*A + C*C){
+          cout<<"TRIANGULO OBTUSANGULO"<<endl;  
+        }
+        if(maior2*maior2< A*A + C*C){
+          cout<<"TRIANGULO ACUTANGULO"<<endl;
+        }
+        if(maior2 == A and maior2 == C){
+            
+           cout<<"TRIANGULO EQUILATERO"<<endl;
+        }else{
+            if(maior2 ==A){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
             }
 
+            if(maior2 ==C){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
 
-        }
-
-        if (C>A and C>B){
-            
-            if(C>=A+B){
-            cout<<"Não forma triangulo"<<endl;
             }else{
-              if(C*C==A*A+B*B){
-                cout<<"Triangulo retangulo"<<endl;
-             }
 
-             if(C*C>B*B+A*A){
-                cout<<"Triangulo obtusangulo"<<endl;
-             }
-
-             if(C*C<B*B+A*A){
-                cout<<"Triangulo acutangulo"<<endl;
-             }
-
-             
-             
-
-
-
-
-
-
+            if(A == C){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
             }
-        
-            
-            
-
-        }
-
-        
-        if(A==B and A==C and C==B){
-
-                cout<<"Triangulo Acutangulo"<<endl;
-                cout<<"Triangulo equilatero"<<endl;
-            }
-
-        
-        if((A==B)>C or (A==B)<C){
-            if(A>=B+C){
-            cout<<"Não forma triangulo"<<endl;
-        
-           }else{
-            if(A*A == B*B + C*C){
-                cout<<"Triangulo retangulo"<<endl;
-
-            }
-
-            if(A*A > B*B + C*C){
-                 cout<<"Triangulo obtusangulo"<<endl;
-                
-            }
-                    
-            if(A*A <B*B + C*C){
-                cout<<"Triangulo acutangulo"<<endl;
-                    
-            }
-            
-            cout<<"Triangulo Isosceles"<<endl;
-            
-            
-
-                    
             }
         }
+              
 
-        if((B==C)>A or (B==C)<A){
+    }
+
+
+
+}else{
+    if(maior2==C){
+    if(maior2>=A+B){
+        cout<<"NAO FORMA TRIANGULO"<<endl;
+    }else{
+        if(maior2*maior2 == A*A + B*B){
+         cout<<"TRIANGULO RETANGULO"<<endl;
+        }
+        if(maior2*maior2 >A*A + B*B){
+          cout<<"TRIANGULO OBTUSANGULO"<<endl;  
+        }
+        if(maior2*maior2< A*A + B*B){
+          cout<<"TRIANGULO ACUTANGULO"<<endl;
+        }
+        if(maior2 == A and maior2 == B){
             
-            if(C>=A+B){
-            cout<<"Não forma triangulo"<<endl;
+           cout<<"TRIANGULO EQUILATERO"<<endl;
+        }else{
+            if(maior2 ==A){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
+            }
+
+            if(maior2 ==B){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
+
             }else{
-              if(C*C==A*A+B*B){
-                cout<<"Triangulo retangulo"<<endl;
-             }
 
-             if(C*C>B*B+A*A){
-                cout<<"Triangulo obtusangulo"<<endl;
-             }
-
-             if(C*C<B*B+A*A){
-                cout<<"Triangulo acutangulo"<<endl;
-             }else{
-                cout<<"Triangulo Isosceles"<<endl;
-             }
-             
-
-
+            if(A ==B){
+                cout<<"TRIANGULO ISOSCELES"<<endl;
+            }
+            }
         }
-        
-        
+              
 
-        }
+    }
 
-        if((A==C)>B or (A==C)<B){
-            if(C>=A+B){
-            cout<<"Não forma triangulo"<<endl;
-            }else{
-              if(C*C==A*A+B*B){
-                cout<<"Triangulo retangulo"<<endl;
-             }
 
-             if(C*C>B*B+A*A){
-                cout<<"Triangulo obtusangulo"<<endl;
-             }
 
-             if(C*C<B*B+A*A){
-                cout<<"Triangulo acutangulo"<<endl;
-             }
-
-        }
 }
 }
 
 
+}
 
 
+
+}
         
 
 
