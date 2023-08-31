@@ -9,6 +9,8 @@ int main(){
    
     for(cin>>X , Y=X, num=0 ,soma=0 ; X>0 ; num++, cin>>X , soma+=X){
 
+    
+
        
        
         soma2= soma+Y;
