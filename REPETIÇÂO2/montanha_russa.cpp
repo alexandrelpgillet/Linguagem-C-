@@ -9,15 +9,17 @@ int main(){
 
     cin>>pessoas>>altura_min>>altura_max;
 
-    for(pessoas , repeticao , altura_min , altura_max ; repeticao<pessoas ; repeticao++){
+    for(pessoas ,visitantes_validos, repeticao , altura_min , altura_max ; repeticao<pessoas ; repeticao++){
 
         cin>>altura;
         if(altura>=altura_min && altura<=altura_max){
             visitantes_validos+=1;
 
         }
+
+        visitantes_validos;
         
     }
 
-    cout<<++visitantes_validos-1<<endl;
+    cout<<+visitantes_validos<<endl;
 }
