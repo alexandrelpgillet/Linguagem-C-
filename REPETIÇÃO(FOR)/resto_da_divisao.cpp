@@ -5,10 +5,10 @@ int main(){
     cin>>X>>Y;
 
     if(X>Y){
-        for(Y ; Y<X; Y++){
+        for(Y; Y<X; Y++){
             
             if(Y%5==2 || Y%5==3){
-                if(Y>3){
+                if(Y>2){
                 cout<<Y<<endl;
             }
         }
