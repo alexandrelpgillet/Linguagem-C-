@@ -2,24 +2,49 @@
 using namespace std;
 int main(){
 
-    int repeticao , pessoas , altura_min , altura_max , altura , visitantes_validos ;
+    int pessoas , altura_minima , altura_max , altura , var, apto , N;
+    
+    
+    N=0;
+    
+    
 
-    visitantes_validos=0;    
-    repeticao = 0;
+    
 
-    cin>>pessoas>>altura_min>>altura_max;
+    while(cin>>pessoas>>altura_minima>>altura_max){
 
-    for(pessoas ,visitantes_validos, repeticao , altura_min , altura_max ; repeticao<pessoas ; repeticao++){
+        
+    
+   
 
-        cin>>altura;
-        if(altura>=altura_min && altura<=altura_max){
-            visitantes_validos+=1;
+
+       for(  cin>>altura ,N , apto; N<pessoas ; N++ ,  cin>>altura ){
+
+        
+         
+        
+        
+
+        if(altura>=altura_minima && altura<=altura_max){
+            apto=0;
+            apto+=1;
 
         }
 
-        visitantes_validos;
+        ++apto;
+   
+
+        
+        
+         
         
     }
+     cout<<++apto<<endl; 
+    
 
-    cout<<+visitantes_validos<<endl;
+
+    }
+    
+    
+   
 }
