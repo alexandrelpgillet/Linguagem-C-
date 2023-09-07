@@ -1,51 +1,34 @@
-#include <iostream> 
+#include <stdio.h> 
 using namespace std;
 int main(){
 
-    int player , repeticao , vot , total;
-    
-
+    int N , repeticao , vot , total;
     
     
-    while(cin>>player){
-        
-        
-        
-        repeticao = 0;
-        total=0;
+    
+    while(scanf("%d" , &N) != EOF){
 
-        
-     
+           
 
-        for(/**repeticao=0 , total=0 **/; repeticao<player ; repeticao++){
+        for( total=0 , repeticao=0 ; repeticao<N ; repeticao++){
 
-
-            cin>>vot;
+            scanf("%d" , &vot);
             total+=vot;
-            
-
-            
+        
 
         }
-    
-
-        //if(repeticao == player){
+        
            
-            if(total >= player*2.0/3 ){
+        if(total >= N*2/3.0 ){
             
-            cout<<"impeachment"<<endl;
+            printf("impeachment\n");
+        
         }else{
 
-
-            
-            cout<<"acusacao arquivada"<<endl;
+            printf("acusacao arquivada\n");
             
         }
-        
-        //}
-
-
-        
+          
         
 
     }
